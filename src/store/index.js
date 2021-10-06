@@ -53,7 +53,7 @@ const store = new Vuex.Store({
                     context.commit('addCounter', oldProduct)
                     resolve('已添加购物车~a')
                 } else {
-                    payload.count = 1
+                    payload.count = 0
                     //context.state.cartList.push(payload)
                     context.commit('addCart', payload)
                     resolve('已添加购物车~')
